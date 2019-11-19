@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style-cliente.css">
+    <title>avaliacao-manobrista</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo">
+        <div class="busca">
+            <input type="text" name="busca" id="busca" width="100px" height="20px">
+        </div>
+        <img src="assets/img/menu.png" alt="menu" width="40px" height="40px" class="menu" onclick="paginaInicial()">
+    </nav>
+
+    <div id="menu-hover">
+        <div class="container-menu">
+            <p id="button-pagina-inicial">Página Inicial</p>
+            <br>
+            <p id="button-scan">Scan</p>
+            <br>
+            <p id="button-rotina">Rotina</p>
+            <br>
+            <p id="button-ajuda">Ajuda</p>
+        </div>
+    </div>
+
+    <div class="container-avaliacao-manobrista">
+        <div class="titulo-avaliacao-manobrista">Avalie seu manobrista aqui:</div>
+
+        <div class="stars">
+            <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="one-star" onclick="starFillClickOne()">
+            <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="two-star" onclick="starFillClickTwo()">
+            <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="three-star" onclick="starFillClickThree()">
+            <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="four-star" onclick="starFillClickFour()">
+            <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="five-star" onclick="starFillClickFive()">
+        </div>
+
+        <div class="ok-avaliacao">
+            <p class="text-ok">Ok</p>
+        </div>
+
+        <div class="pular">
+            <p class="text-pular">Pular</p> 
+        </div>
+
+        <div class="gorjeta">
+            <p class="titulo-gorjeta">
+                Dê uma gorjeta para seu manobrista:
+            </p>
+            <div class="um-real">
+                <p class="texto-gorjeta">R$ 1</p>
+            </div>
+            <div class="tres-reais">
+                <p class="texto-gorjeta">R$ 3</p> 
+            </div>
+            <div class="cinco-reais">
+                <p class="texto-gorjeta">R$ 5</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/cliente.js"></script>
+</body>
+</html>

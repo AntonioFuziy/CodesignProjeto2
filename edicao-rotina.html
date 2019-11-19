@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style-cliente.css">
+    <title>edicao-rotina</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo">
+        <div class="busca">
+            <input type="text" name="busca" id="busca" width="100px" height="20px">
+        </div>
+        <img src="assets/img/menu.png" alt="menu" width="40px" height="40px" class="menu" onclick="paginaInicial()">
+    </nav>
+
+    <div id="menu-hover">
+        <div class="container-menu">
+            <p id="button-pagina-inicial">Página Inicial</p>
+            <br>
+            <p id="button-scan">Scan</p>
+            <br>
+            <p id="button-rotina">Rotina</p>
+            <br>
+            <p id="button-ajuda">Ajuda</p>
+        </div>
+    </div>
+    <div class="container-edicao-rotina">
+        <div class="titulo-edicao-rotina">
+            <p>Adicionar Rotina</p>
+        </div>
+
+        <p class="edicao-titulo">Título:</p>
+
+        <input type="text" name="titulo" id="input-titulo">
+
+        <p class="titulo-dias-semana">Dias da semana:</p>
+
+        <div class="dias-semana"> 
+            <div class="sunday">S</div>
+            <div class="monday">M</div>
+            <div class="tuesday">T</div>
+            <div class="wednesday">W</div>
+            <div class="thursday">T</div>
+            <div class="friday">F</div>
+            <div class="saturday">S</div>
+        </div>
+        
+        <p class="titulo-time-chegada">Chegada:</p>
+
+        <input type="time" name="time-chegada" id="time-chegada">
+
+        <p class="titulo-time-saida">Saída:</p>
+
+        <input type="time" name="time-saida" id="time-saida">
+
+        <div class="button-cancelar-edicao-rotina" onclick="location.href = 'index-cliente.html'">
+            Cancelar
+        </div>
+
+        <div class="button-ok-edicao-rotina" onclick="location.href = 'index-cliente.html'">
+            Ok
+        </div>
+
+    </div>
+
+    <script src="assets/js/cliente.js"></script>
+</body>
+</html>
