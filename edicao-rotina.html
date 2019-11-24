@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index-cliente.html'">
         <div class="busca">
             <input type="text" name="busca" id="busca" width="100px" height="20px">
         </div>
@@ -19,7 +19,7 @@
 
     <div id="menu-hover">
         <div class="container-menu">
-            <p id="button-pagina-inicial">Página Inicial</p>
+            <p id="button-pagina-inicial" onclick="location.href='index-cliente.html'">Página Inicial</p>
             <br>
             <p id="button-scan">Scan</p>
             <br>
@@ -40,13 +40,13 @@
         <p class="titulo-dias-semana">Dias da semana:</p>
 
         <div class="dias-semana"> 
-            <div class="sunday">S</div>
-            <div class="monday">M</div>
-            <div class="tuesday">T</div>
-            <div class="wednesday">W</div>
-            <div class="thursday">T</div>
-            <div class="friday">F</div>
-            <div class="saturday">S</div>
+            <div class="sunday" onclick="Sunday()">S</div>
+            <div class="monday" onclick="Monday()">M</div>
+            <div class="tuesday" onclick="Tuesday()">T</div>
+            <div class="wednesday" onclick="Wednesday()">W</div>
+            <div class="thursday" onclick="Thursday()">T</div>
+            <div class="friday" onclick="Friday()">F</div>
+            <div class="saturday" onclick="Saturday()">S</div>
         </div>
         
         <p class="titulo-time-chegada">Chegada:</p>
@@ -61,7 +61,7 @@
             Cancelar
         </div>
 
-        <div class="button-ok-edicao-rotina" onclick="location.href = 'index-cliente.html'">
+        <div class="button-ok-edicao-rotina" onclick="location.href = 'index-cliente.html'" onclick="confirmaEdicao()">
             Ok
         </div>
 

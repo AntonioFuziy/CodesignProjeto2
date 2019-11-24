@@ -12,20 +12,30 @@ body{
 
 /* Nav-bar */
 .nav-bar{
+    z-index: 99999;
     margin-top: 10px;
     margin-left: 10px;
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 2px 2px 2px #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 /* Margem do container */
 .container{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background-color: #7159C1;
+    z-index: 1;
     margin-top: 30px;
 }
 
 /* Menu  navbar*/
 .menu{
+    z-index: 99999;
     margin-right: 10px;
 }
 
@@ -34,40 +44,68 @@ body{
 }
 
 .container-menu{
-    position: absolute;
-    z-index: 999;
-    background-color: white;
+    z-index: 99999;
+    position: absolute; 
+    background-color: #7159C1;
     width: 35%;
     height: 13%;
     right: 0;
     line-height: 1.5rem;
     box-shadow: 2px 2px 2px 2px #dbdbdb;
+    text-align: right;
 }
 
 .container-menu p{
+    z-index: 99999;
     font-size: 1.2rem;
     position: absolute;
     right: 12px;
+    color: #dbdbdb;
+}
+
+#button-pagina-inicial{
+    width: 100%;
+}
+
+#button-ajuda{
+    width: 100%;
+}
+
+#button-rotina{
+    width: 100%;
+}
+
+#button-scan{
+    width: 100%;
 }
 
 #button-pagina-inicial:hover {
-    background-color: rgb(87, 87, 214);
+    z-index: 99999;
+    background-color: black;
+    color: #dbdbdb;
 }
 
 #button-ajuda:hover{
-    background-color: rgb(87, 87, 214);
+    z-index: 99999;
+    background-color: black;
+    color: #dbdbdb;
 }
 
 #button-rotina:hover{
-    background-color: rgb(87, 87, 214);
+    z-index: 99999;
+    background-color: black;
+    color: #dbdbdb;
 }
 
 #button-scan:hover{
-    background-color: rgb(87, 87, 214);
+    z-index: 99999;
+    background-color: black;
+    color: #dbdbdb;
 }
 
 /* Barra de busca */
 #busca{
+    z-index: 99999;
     margin-top: 12px;
     margin-right: 20px;
     justify-content: center;
@@ -86,6 +124,9 @@ body{
     border-style: none none solid none;
     border-width: 2px;
     border-color: #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 /* Div da Rotina */
@@ -116,6 +157,9 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .rotina h1{
@@ -180,13 +224,15 @@ body{
     z-index: 99;
     background-color: white;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 3%;
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    box-shadow: 3px 3px 3px 3px #dbdbdb;
     position: absolute;
     bottom: 15px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .imagem-interrogacao{
@@ -207,7 +253,9 @@ body{
     height: 30px;
     border-radius: 15px;
     padding: 10px;
-    box-shadow: 3px 3px 3px 3px #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .chamar-button h2{
@@ -222,9 +270,11 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    box-shadow: 3px 3px 3px 3px #dbdbdb;
     position: absolute;
     bottom: 15px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .scan{
@@ -238,25 +288,49 @@ body{
     position: absolute;
     width: 100%;
     height: 200px;
-    background-color: #f3f3f3;
+    background-color: #7159C1;
+    bottom: 0;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 /* Página de Ajuda */
 
+.cor-fundo-ajuda{
+    z-index: 1;
+    background-color: #7159C1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 7%;
+}
+
 .titulo-funcionamento{
-    margin-top: 5%;
+    z-index: 2;
+    position: absolute;
+    top: 7%;
     text-align: center;
     font-size: 2rem;
     border-style: solid;
     border-width: 1px;
-    border-color: #000000;
+    border-color: #dbdbdb;
     height: 60px;
     width: 100%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    color: #dbdbdb;
+}
+
+.titulo-texto{
+    z-index: 2;
+    margin-top: 3%;
 }
 
 .descricao{
+    z-index: 2;
+    position: absolute;
+    top: 15%;
     display: flex;
     margin-top: 20%;
     margin-right: 10%;
@@ -272,15 +346,24 @@ body{
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;  
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #dbdbdb;
 }
 
-.button-ok-ajuda{     
+.button-ok-ajuda{
+    z-index: 2;     
+    width: 100%;
     font-size: 2rem;
-    padding: 3px;
     border-style: solid;
     border-color: #dbdbdb;
     border-width: 1px;
     align-items: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 li{
@@ -293,7 +376,9 @@ a{
 }
 
 .button-ok-ajuda:hover{
+    z-index: 2;
     background-color: black;
+    color: white;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -313,6 +398,9 @@ a{
     text-align: center;
     font-size: 2rem;
     position: absolute;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 /* Inputs para edicao de rotina*/
@@ -326,6 +414,9 @@ a{
     border-style: solid;
     border-color: #dbdbdb;
     border-width: 2px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .edicao-titulo{
@@ -333,6 +424,9 @@ a{
     top: 23%;
     left: 15%;
     font-size: 1.5rem;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 /* Botoes de ok e cancelar */
@@ -342,6 +436,9 @@ a{
     font-size: 1.5rem;
     top: 46%;
     left: 10%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 #time-chegada{
@@ -353,6 +450,9 @@ a{
     border-style: solid;
     border-color: #dbdbdb;
     border-width: 1px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .titulo-time-saida{
@@ -360,6 +460,9 @@ a{
     font-size: 1.5rem;
     top: 63%;
     left: 10%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 #time-saida{
@@ -371,6 +474,9 @@ a{
     border-style: solid;
     border-color: #dbdbdb;
     border-width: 1px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 /* Divisao dos dias da semana um ao lado do outro */
@@ -385,6 +491,9 @@ a{
     font-family: 'helvetica', sans-serif;
     font-size: 2rem;
     text-align: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .titulo-dias-semana{
@@ -392,6 +501,9 @@ a{
     position: absolute;
     top: 33%;
     left: 3%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 /*Formato dos botoes dos dias da semana*/
@@ -468,38 +580,38 @@ a{
 /* Configuracoes de botoes dos dias da semana */
 
 .sunday:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 
 .monday:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 .tuesday:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 .wednesday:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 .thursday:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 .friday:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 .saturday:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
@@ -517,6 +629,9 @@ a{
     border-style: solid;
     border-color: #dbdbdb;
     border-width: 1px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .button-cancelar-edicao-rotina{
@@ -530,21 +645,24 @@ a{
     border-style: solid;
     border-color: #dbdbdb;
     border-width: 1px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .button-ok-edicao-rotina:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 .button-cancelar-edicao-rotina:hover{
-    background-color: #dbdbdb;
+    background-color: black;
     color: white;
 }
 
 /* Pagina de avaliacao do manobrista -=--=-=-=-=-=-=-=--=-=-=-=-=-=-=--=-=-=-=-=-=-=--=-=-=-=-=-=-=--=-=-=-=-=-=-=--=-=-=-=-=-=-=--=-=-=-=-=-= */
 
-.container-avaliacao-manobrista{
+#container-avaliacao-manobrista{
     display: flex;
 }
 
@@ -558,6 +676,9 @@ a{
     border-style: solid;
     border-width: 1px;
     border-color: #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -568,9 +689,12 @@ a{
     position: absolute;
     top: 27%;
     left: 8%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
-.ok-avaliacao{
+#ok-avaliacao{
     position: absolute;
     top: 40%;
     left: 57%;
@@ -581,10 +705,21 @@ a{
     border-width: 1px;
     border-style: solid;
     text-align: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+#ok-avaliacao:hover{
+    color: white;
+    background-color: black;
 }
 
 .text-ok{
     margin-top: 2%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .pular{
@@ -598,6 +733,14 @@ a{
     border-width: 1px;
     border-style: solid;
     text-align: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.pular:hover{
+    color: white;
+    background-color: black;
 }
 
 .text-pular{
@@ -624,6 +767,9 @@ a{
     position: absolute;
     top: 63%;
     left: 20%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 .um-real{
@@ -673,4 +819,69 @@ a{
 
 .texto-gorjeta{
     margin-top: 12px;
+}
+
+#notificacao-agradecimento{
+    z-index: 9999;
+    width: 60%;
+    height: 35%;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: white;
+    display: none;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    box-shadow: 10px 10px 10px 10px #dbdbdb;
+}
+
+.texto-agradecimento{
+    margin-top: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.container-estacionado{
+    display: flex;
+}
+
+.container-descricao-estacionado{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 30%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.titulo-estacionado{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.texto-estacionado{
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+@keyframes fadeNotification{
+    from{
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }

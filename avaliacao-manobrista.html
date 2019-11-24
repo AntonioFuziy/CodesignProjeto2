@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index-cliente.html'">
         <div class="busca">
             <input type="text" name="busca" id="busca" width="100px" height="20px">
         </div>
@@ -19,7 +19,7 @@
 
     <div id="menu-hover">
         <div class="container-menu">
-            <p id="button-pagina-inicial">Página Inicial</p>
+            <p id="button-pagina-inicial" onclick="location.href='index-cliente.html'">Página Inicial</p>
             <br>
             <p id="button-scan">Scan</p>
             <br>
@@ -29,8 +29,14 @@
         </div>
     </div>
 
-    <div class="container-avaliacao-manobrista">
+    <div id="container-avaliacao-manobrista">
         <div class="titulo-avaliacao-manobrista">Avalie seu manobrista aqui:</div>
+
+        <div id="notificacao-agradecimento">
+            <p class="texto-agradecimento">
+                Obrigado pela sua avaliação
+            </p>
+        </div>
 
         <div class="stars">
             <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="one-star" onclick="starFillClickOne()">
@@ -40,12 +46,12 @@
             <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="five-star" onclick="starFillClickFive()">
         </div>
 
-        <div class="ok-avaliacao">
+        <div id="ok-avaliacao" onclick="fadeNotification()">
             <p class="text-ok">Ok</p>
         </div>
 
         <div class="pular">
-            <p class="text-pular">Pular</p> 
+            <p class="text-pular" onclick="location.href='index-cliente.html'">Pular</p> 
         </div>
 
         <div class="gorjeta">
