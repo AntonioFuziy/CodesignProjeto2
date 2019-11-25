@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index-cliente.html'">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index.html'">
         <div class="busca">
             <input type="text" name="busca" id="busca" width="100px" height="20px">
         </div>
@@ -19,7 +19,7 @@
 
     <div id="menu-hover">
         <div class="container-menu">
-            <p id="button-pagina-inicial" onclick="location.href='index-cliente.html'">Página Inicial</p>
+            <p id="button-pagina-inicial" onclick="location.href='index.html'">Página Inicial</p>
             <br>
             <p id="button-scan">Scan</p>
             <br>
@@ -36,22 +36,18 @@
             <p class="texto-agradecimento">
                 Obrigado pela sua avaliação
             </p>
+            
+            <div id="ok-avaliacao">
+                <p class="text-ok" onclick="location.href='index.html'">Ok</p>
+            </div>
         </div>
 
-        <div class="stars">
+        <div class="stars" onclick="fadeNotification()">
             <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="one-star" onclick="starFillClickOne()">
             <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="two-star" onclick="starFillClickTwo()">
             <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="three-star" onclick="starFillClickThree()">
             <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="four-star" onclick="starFillClickFour()">
             <img src="assets/img/star.png" alt="star" width="60px" height="55px" id="five-star" onclick="starFillClickFive()">
-        </div>
-
-        <div id="ok-avaliacao" onclick="fadeNotification()">
-            <p class="text-ok">Ok</p>
-        </div>
-
-        <div class="pular">
-            <p class="text-pular" onclick="location.href='index-cliente.html'">Pular</p> 
         </div>
 
         <div class="gorjeta">
