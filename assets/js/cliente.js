@@ -63,8 +63,6 @@ let okClick = document.getElementById('notificacao-agradecimento')
 
 function fadeNotification() {
     okClick.style.display = 'block'
-    containerRating.style.opacity = '0.4'
-    okClick.style.opacity = '1'
 }
 
 //Edicao-rotina -=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-==-=-=-=--=-=-=-=-=-=-==-=
