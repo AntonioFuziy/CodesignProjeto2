@@ -240,6 +240,10 @@ body{
     animation-fill-mode: forwards;
 }
 
+.how-to-button:hover{
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
+}
+
 .imagem-interrogacao{
     z-index: 99;
     margin-left: 20px;
@@ -267,6 +271,10 @@ body{
     z-index: 99;
 }
 
+.chamar-button:hover{
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
+}
+
 .scan-button{
     z-index: 99;
     margin-top: 5%;
@@ -280,6 +288,10 @@ body{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+}
+
+.scan-button:hover{
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
 }
 
 .scan{
@@ -735,30 +747,28 @@ li{
 }
 
 .titulo-avaliacao-manobrista{
-    z-index: 2;
+    z-index: 3;
     font-size: 1.7rem;
-    color: #000000;
+    color: #dbdbdb;
     position: absolute;
-    top: 13%;
+    top: 15%;
     text-align: center;
     width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dbdbdb;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
-    background-color: white;
+    background-color: #7159C1;
 }
 
 
 .stars{
-    z-index: 2;
+    z-index: 3;
     width: 60%;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 27%;
+    width: 85%;
+    top: 33%;
     left: 8%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
@@ -767,7 +777,7 @@ li{
 }
 
 .text-ok{
-    z-index: 2;
+    z-index: 3;
     margin-top: 2%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
@@ -775,7 +785,7 @@ li{
 }
 
 .titulo-gorjeta{
-    z-index: 2;
+    z-index: 3;
     border-width: 1px;
     border-color: #dbdbdb;
     border-style: solid;
@@ -786,10 +796,12 @@ li{
     left: -25%;
     font-size: 1.5rem;
     background-color: white;
+    text-align: center;
+    color: #7159C1;
 }
 
 .gorjeta{
-    z-index: 2;
+    z-index: 3;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -802,7 +814,7 @@ li{
 }
 
 .um-real{
-    z-index: 2;
+    z-index: 3;
     font-size: 1.1rem;
     border-style: solid;
     border-color: #dbdbdb;
@@ -811,10 +823,11 @@ li{
     width: 40px;
     text-align: center;
     border-width: 1px;
+    color: #7159C1;
 }
 
 .tres-reais{
-    z-index: 2;
+    z-index: 3;
     font-size: 1.1rem;
     border-style: solid;
     border-color: #dbdbdb;
@@ -823,10 +836,11 @@ li{
     height: 40px;
     text-align: center;
     border-width: 1px;
+    color: #7159C1;
 }
 
 .cinco-reais{
-    z-index: 2;
+    z-index: 3;
     font-size: 1.1rem;
     border-style: solid;
     border-color: #dbdbdb;
@@ -835,28 +849,29 @@ li{
     height: 40px;
     text-align: center;
     border-width: 1px;
+    color: #7159C1;
 }
 
 .um-real:hover{
-    z-index: 2;
+    z-index: 3;
     color: white;
     background-color: #000000;
 }
 
 .tres-reais:hover{
-    z-index: 2;
+    z-index: 3;
     color: white;
     background-color: #000000;
 }
 
 .cinco-reais:hover{
-    z-index: 2;
+    z-index: 3;
     color: white;
     background-color: #000000;
 }
 
 .texto-gorjeta{
-    z-index: 2;
+    z-index: 3;
     margin-top: 12px;
 }
 
@@ -884,7 +899,7 @@ li{
 }
 
 #ok-avaliacao{
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     top: 70%;
     left: 35%;
@@ -892,18 +907,18 @@ li{
     width: 70px;
     height: 30px;
     border-color: #dbdbdb;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     text-align: center;
-    background-color: white;
+    background-color: #7159C1;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
-    color: #7159C1;
+    color: #dbdbdb;
 }
 
 #ok-avaliacao:hover{
-    z-index: 2;
+    z-index: 3;
     color: white;
     background-color: black;
 }
@@ -916,6 +931,19 @@ li{
     background-color: #7159C1;
     width: 100%;
     height: 100%;
+}
+
+.cor-fundo-container-avaliacao{
+    z-index: 2;
+    position: absolute;
+    width: 92%;
+    height: 50%;
+    top: 24%;
+    left: 4%;
+    background-color: white;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    border-style: solid;
 }
 
 /* Avaliação Cliente -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
