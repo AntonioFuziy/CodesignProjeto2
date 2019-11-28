@@ -1058,7 +1058,7 @@ li{
     left: 8%;
     text-align: center;
     align-items: center;
-    background-color: #7159C1;
+    background-image: linear-gradient(to bottom, #7159c1 , #453485);
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
@@ -1131,7 +1131,7 @@ li{
     width: 100%;
     height: 37.5%;
     bottom: 0;
-    background-color: #7159C1;
+    background-image: linear-gradient(to bottom, #7159c1 , #352961);
     box-shadow: 0px -5px 3px 1px #dbdbdb;
 }
 
@@ -1160,8 +1160,8 @@ li{
     left: 8%;
     text-align: center;
     border-style: none none solid none;
-    border-width: 0.1875rem;
-    border-color: #55438f;
+    border-width: 0.125rem;
+    border-color: #bdbdbd;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
@@ -1197,8 +1197,8 @@ li{
     top: 26.5%;
     text-align: center;
     border-style: none none solid none;
-    border-width: 0.1875rem;
-    border-color: #55438f;
+    border-width: 0.125rem;
+    border-color: #bdbdbd;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
@@ -1231,7 +1231,7 @@ li{
     height: 45px;
     left: 30%;
     top: -22.5%;
-    background-color: #7159C1;
+    background-image: linear-gradient(to bottom, #7159c1 , #453485);
     border-radius: 5px;
     animation-name: fadeNotification;
     animation-duration: 0.8s;
@@ -1253,6 +1253,98 @@ li{
     animation-name: fadeNotification;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
+}
+
+/* Horários -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.container-horarios{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 0;
+}
+
+.conversas{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    right: 6%;
+    background-color: #7159C1;
+    border-radius: 5px;
+}
+
+.horarios-voltar{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    left: 8%;
+    background-color: #7159C1;
+    border-radius: 5px;
+}
+
+.horarios-opcoes{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 2.5%;
+    border-radius: 5px;
+}
+
+.tabela-horarios{
+    font-family: 'Quicksand', sans-serif;
+    border-collapse: collapse;
+    margin: 20% 0 0 0;
+    font-size: 1rem;
+    min-width: 300px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10.5%;
+}
+
+.tabela-horarios thead tr{
+    background-color: #7159C1;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabela-horarios tbody tr{
+    background-color: #e6e6e6;
+    color: #7159C1;
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.tabela-horarios tbody tr:nth-of-type(odd){
+    background-color: #f0f0f0;
+}
+
+.tabela-horarios tbody tr.active-row{
+    font-weight: bold;
+    color: #7159C1;
+}
+
+.tabela-horarios th{
+    padding: 12px 15px;
+}
+
+.tabela-horarios td{
+    padding: 12px 15px;
 }
 
 /* Página de SCAN -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
