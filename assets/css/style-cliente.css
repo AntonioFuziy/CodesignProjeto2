@@ -1,5 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #dbdbdb;
 }
 
 @media (max-width: 680px){
@@ -13,21 +14,25 @@ body{
 /* Nav-bar */
 .nav-bar{
     z-index: 99999;
+    background-color: #dbdbdb;
     margin-top: 10px;
     margin-left: 10px;
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 2px 2px 2px #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
 }
 
 /* Margem do container */
 .container{
     width: 100%;
-    height: 90%;
+    height: 94%;
     position: absolute;
     background-color: #7159C1;
     z-index: 1;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 /* Menu  navbar*/
@@ -38,17 +43,19 @@ body{
 
 #menu-hover{
     display: none;
+    z-index: 99999;
 }
 
 .container-menu{
     z-index: 99999;
     position: absolute; 
-    background-color: white;
+    background-color: #dbdbdb;
     width: 35%;
     height: 13%;
     right: 0;
     line-height: 1.5rem;
-    text-align: right;
+    text-align: center;
+
 }
 
 .container-menu p{
@@ -56,9 +63,6 @@ body{
     font-size: 1.2rem;
     position: absolute;
     color: #7159C1;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dbdbdb;
 }
 
 #button-pagina-inicial{
@@ -95,12 +99,6 @@ body{
     color: #dbdbdb;
 }
 
-#button-scan:hover{
-    z-index: 99999;
-    background-color: #7159C1;
-    color: #dbdbdb;
-}
-
 /* Barra de busca */
 #busca{
     z-index: 99999;
@@ -114,6 +112,290 @@ body{
     border-color: #dbdbdb;
     border-width: 1px;
 }
+
+/* index -=-=-=-=-=-=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=-*/
+
+
+/* Botões de interação */
+.how-to-button-index{
+    z-index: 100;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 1%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 88%;
+    left: 5.5%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    box-shadow: 5px 5px 5px 5px #c4c4c4;
+}
+
+.how-to-button-index:hover{
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
+}
+
+.imagem-interrogacao-index{
+    z-index: 99;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.chat-button{
+    z-index: 102;
+    position: absolute;
+    top: 88%;
+    right: 5.5%;
+    margin-top: 5%;
+    margin-left: 75%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    box-shadow: 5px 5px 5px 5px #c4c4c4;
+}
+
+.chat-button:hover{
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
+}
+
+.chat{
+    z-index: 102;
+    position: absolute;
+    top: 18%;
+    left: 15%;
+}
+
+.eventos{
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    background-color: #dbdbdb;
+}
+
+.titulo-eventos{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+.estacionado-info-cliente-index{
+    z-index: 10;
+    position: absolute;
+    background-color: #dbdbdb;
+    display: flex;
+    top: 7%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+    box-shadow: 0px 0px 5px 5px rgb(101, 84, 155);
+}
+
+.estacionado-foto-cliente-index{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    left: -22.5%;
+    top: 25%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.titulo-cliente-estacionado-index{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.estacionado-info-cliente-index p{
+    z-index: 10;
+    color: #171717;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.estacionado-foto-cliente-index{
+    z-index: 3;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    left: -20%;
+    top: 35%;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.descricao-estacionado-nome-index{
+    font-size: 1.3rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    left: 40%;
+    top: 34%;
+    text-align: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.descricao-estacionado-avaliacao-index{
+    font-size: 1.2rem;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 60px;
+    height: 10%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items: flex-end;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.call-client-index{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    left: 30%;
+    top: -22.5%;
+    background-color: #7159C1;
+    border-radius: 5px;
+    animation-name: fadeNotification;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.estacionado-voltar-index{
+    z-index: 3;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    left: 30%;
+    top: 60%;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    animation-name: fadeNotification;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.estacionado-voltar-index p {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+}
+
+.gold-star-index{
+    position: absolute;
+    top: -5%;
+    left: -40%;
+}
+
+/* Horários -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
+
+
+.conversas-index{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    right: 6%;
+    background-color: #7159C1;
+    border-radius: 5px;
+}
+
+.tabela-horarios-index{
+    z-index: 101;
+    position: absolute;
+    top: 48%;
+    width: 80%;
+    left: 5.5%;
+    font-family: 'Quicksand', sans-serif;
+    border-collapse: collapse;
+    margin: 20% 0 0 0;
+    font-size: 1rem;
+    min-width: 300px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10.5%;
+    box-shadow: 5px 5px 5px 5px #c4c4c4;
+}
+
+.tabela-horarios-index thead tr{
+    background-color: #7159C1;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabela-horarios-index tbody tr{
+    background-color: #e6e6e6;
+    color: #7159C1;
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.tabela-horarios-index tbody tr:nth-of-type(odd){
+    background-color: #f0f0f0;
+}
+
+.tabela-horarios-index tbody tr.active-row-index{
+    font-weight: bold;
+    color: #7159C1;
+}
+
+.tabela-horarios-index th{
+    padding: 12px 15px;
+}
+
+.tabela-horarios-index td{
+    padding: 7px 10px;
+}
+
+/* index cliente -=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=-*/
 
 /* Mapa */
 .mapa{
@@ -741,21 +1023,20 @@ li{
 
 #container-avaliacao-manobrista{
     display: flex;
-    justify-content: center;
 }
 
 .titulo-avaliacao-manobrista{
     z-index: 3;
-    font-size: 1.5rem;
-    color: #7159C1;
+    font-size: 1.7rem;
+    color: #dbdbdb;
     position: absolute;
-    top: 25%;
-    left: 5.25%;
+    top: 15%;
     text-align: center;
-    width: 90%;
+    width: 100%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    background-color: #7159C1;
 }
 
 
@@ -766,7 +1047,7 @@ li{
     justify-content: space-between;
     position: absolute;
     width: 85%;
-    top: 45%;
+    top: 33%;
     left: 8%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
@@ -790,7 +1071,7 @@ li{
     line-height: 2rem;
     position: absolute;
     width: 150%;
-    top: -150%;
+    top: -280%;
     left: -25%;
     font-size: 1.5rem;
     background-color: white;
@@ -921,20 +1202,6 @@ li{
     background-color: black;
 }
 
-.foto-manobrista{
-    z-index: 3;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    left: 8%;
-    top: 31%;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
 .cor-fundo-avaliacao{
     position: absolute;
     top: 7%;
@@ -949,8 +1216,8 @@ li{
     z-index: 2;
     position: absolute;
     width: 92%;
-    height: 75%;
-    top: 15%;
+    height: 50%;
+    top: 24%;
     left: 4%;
     background-color: white;
     border-color: #dbdbdb;
@@ -982,369 +1249,33 @@ li{
 
 /* Estacionado -=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=- */
 
-.container-descricao-estacionado{
-    position: absolute;
+.container-estacionado{
     display: flex;
-    width: 100%;
-    height: 60%;
-    background-color: #f7f7f7;
 }
 
-.estacionado-background-color{
+.container-descricao-estacionado{
     position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #f7f7f7;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 30%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 .titulo-estacionado{
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 1.5rem;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    height: 6.5%;
-    left: 8%;
     text-align: center;
-    border-style: none none solid none;
-    border-width: 0.1875rem;
-    border-color: #dbdbdb;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
 }
 
 .texto-estacionado{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-left: 10px;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    left: 8%;
-    top: 55%;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.foto-carro{
-    z-index: 3;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    left: 8%;
-    top: 30%;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.horario-saida{
-    font-size: 1.5rem;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    height: 10%;
-    top: 17.5%;
-    left: 8%;
-    text-align: center;
-    align-items: center;
-    background-color: #7159C1;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.descricao-estacionado-carro{
-    font-size: 1.5rem;
-    z-index: 4;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 85%;
-    height: 10%;
-    top: 55%;
-    left: 8%;
-    text-align: center;
-    align-items: center;
-    border-style: none none solid none;
-    border-color: #dbdbdb;
-    border-width: 0.1875rem;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.descricao-estacionado-placa{
-    font-size: 1.5rem;
-    z-index: 4;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 85%;
-    height: 10%;
-    top: 65%;
-    left: 8%;
-    text-align: center;
-    align-items: center;
-    border-style: none none solid none;
-    border-color: #dbdbdb;
-    border-width: 0.1875rem;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.descricao-estacionado-vaga{
-    font-size: 1.5rem;
-    z-index: 4;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 85%;
-    height: 10%;
-    top: 75%;
-    left: 8%;
-    text-align: center;
-    align-items: center;
-    border-style: none none solid none;
-    border-color: #dbdbdb;
-    border-width: 0.1875rem;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.estacionado-info-cliente{
-    z-index: 1;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 37.5%;
-    bottom: 0;
-    background-color: #7159C1;
-    box-shadow: 0px -5px 3px 1px #dbdbdb;
-}
-
-.estacionado-foto-cliente{
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    left: -22.5%;
-    top: 25%;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.titulo-cliente-estacionado{
-    margin-top: 20px;
-    font-size: 1.5rem;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    height: 10%;
-    left: 8%;
-    text-align: center;
-    border-style: none none solid none;
-    border-width: 0.125rem;
-    border-color: #bdbdbd;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.estacionado-info-cliente p{
-    color:#dbdbdb
-}
-
-.estacionado-foto-cliente{
-    z-index: 3;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 85%;
-    left: -20%;
-    top: 25%;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.descricao-estacionado-nome{
-    font-size: 1.3rem;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 50%;
-    height: 10%;
-    left: 40%;
-    top: 26.5%;
-    text-align: center;
-    border-style: none none solid none;
-    border-width: 0.125rem;
-    border-color: #bdbdbd;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.descricao-estacionado-avaliacao{
-    font-size: 1.2rem;
-    z-index: 4;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 60px;
-    height: 10%;
-    top: 38.5%;
-    left: 55.5%;
-    text-align: center;
-    align-items: flex-end;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.call-client{
-    z-index: 3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    width: 40%;
-    height: 45px;
-    left: 30%;
-    top: -22.5%;
-    background-color: #7159C1;
-    border-radius: 5px;
-    animation-name: fadeNotification;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.estacionado-voltar{
-    z-index: 3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    width: 40%;
-    height: 45px;
-    left: 30%;
-    top: 60%;
-    background-color: #dbdbdb;
-    border-radius: 5px;
-    animation-name: fadeNotification;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-/* Horários -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
-
-.container-horarios{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    z-index: 0;
-}
-
-.conversas{
-    z-index: 3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    width: 40%;
-    height: 45px;
-    right: 6%;
-    background-color: #7159C1;
-    border-radius: 5px;
-}
-
-.horarios-voltar{
-    z-index: 3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    width: 40%;
-    height: 45px;
-    left: 8%;
-    background-color: #7159C1;
-    border-radius: 5px;
-}
-
-.horarios-opcoes{
-    z-index: 3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 45px;
-    top: 2.5%;
-    border-radius: 5px;
-}
-
-.tabela-horarios{
-    font-family: 'Quicksand', sans-serif;
-    border-collapse: collapse;
-    margin: 20% 0 0 0;
-    font-size: 1rem;
-    min-width: 300px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-bottom: 10.5%;
-}
-
-.tabela-horarios thead tr{
-    background-color: #7159C1;
-    color: #FFFFFF;
-    text-align: left;
-    font-weight: bold;
-}
-
-.tabela-horarios tbody tr{
-    background-color: #e6e6e6;
-    color: #7159C1;
-    text-align: left;
-    font-weight: 500;
-    border-bottom: 1px solid #d1d1d1;
-}
-
-.tabela-horarios tbody tr:nth-of-type(odd){
-    background-color: #f0f0f0;
-}
-
-.tabela-horarios tbody tr.active-row{
-    font-weight: bold;
-    color: #7159C1;
-}
-
-.tabela-horarios th{
-    padding: 12px 15px;
-}
-
-.tabela-horarios td{
-    padding: 12px 15px;
 }
 
 /* Página de SCAN -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
