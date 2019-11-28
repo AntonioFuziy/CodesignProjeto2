@@ -1255,8 +1255,8 @@ li{
 
 .container-descricao-estacionado{
     position: absolute;
-    top: 10%;
-    left: 20%;
+    top: 1%;
+    left: 0;
     width: 60%;
     height: 30%;
     border-style: solid;
@@ -1401,4 +1401,371 @@ li{
         opacity: 1;
         transform: translateY(0%);
     }
+}
+
+/* Estacionado -=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=- */
+
+.container-descricao-estacionado{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background-color: #f7f7f7;
+}
+
+.estacionado-background-color{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.titulo-estacionado{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    height: 6.5%;
+    left: 8%;
+    text-align: center;
+    border-style: none none solid none;
+    border-width: 0.1875rem;
+    border-color: #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.texto-estacionado{
+    font-size: 1.3rem;
+    margin-left: 10px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    left: 8%;
+    top: 55%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.foto-carro{
+    z-index: 3;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    left: 8%;
+    top: 30%;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.horario-saida{
+    font-size: 1.5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: 17.5%;
+    left: 8%;
+    text-align: center;
+    align-items: center;
+    background-color: #7159C1;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.descricao-estacionado-carro{
+    font-size: 1.5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: 55%;
+    left: 8%;
+    text-align: center;
+    align-items: center;
+    border-style: none none solid none;
+    border-color: #dbdbdb;
+    border-width: 0.1875rem;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.descricao-estacionado-placa{
+    font-size: 1.5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: 65%;
+    left: 8%;
+    text-align: center;
+    align-items: center;
+    border-style: none none solid none;
+    border-color: #dbdbdb;
+    border-width: 0.1875rem;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.descricao-estacionado-vaga{
+    font-size: 1.5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: 75%;
+    left: 8%;
+    text-align: center;
+    align-items: center;
+    border-style: none none solid none;
+    border-color: #dbdbdb;
+    border-width: 0.1875rem;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.estacionado-info-cliente{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 37.5%;
+    bottom: 0;
+    background-color: #7159C1;
+    box-shadow: 0px -5px 3px 1px #dbdbdb;
+}
+
+.estacionado-foto-cliente{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    left: -22.5%;
+    top: 25%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.titulo-cliente-estacionado{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    left: 8%;
+    text-align: center;
+    border-style: none none solid none;
+    border-width: 0.125rem;
+    border-color: #bdbdbd;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.estacionado-info-cliente p{
+    color:#dbdbdb
+}
+
+.estacionado-foto-cliente{
+    z-index: 3;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    left: -20%;
+    top: 25%;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.descricao-estacionado-nome{
+    font-size: 1.3rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    left: 40%;
+    top: 26.5%;
+    text-align: center;
+    border-style: none none solid none;
+    border-width: 0.125rem;
+    border-color: #bdbdbd;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.descricao-estacionado-avaliacao{
+    font-size: 1.2rem;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 60px;
+    height: 10%;
+    top: 38.5%;
+    left: 55.5%;
+    text-align: center;
+    align-items: flex-end;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.call-client{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    left: 30%;
+    top: -22.5%;
+    background-color: #7159C1;
+    border-radius: 5px;
+    animation-name: fadeNotification;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.estacionado-voltar{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    left: 30%;
+    top: 60%;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    animation-name: fadeNotification;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+/* Horários -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.container-horarios{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 0;
+}
+
+.conversas{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    right: 6%;
+    background-color: #7159C1;
+    border-radius: 5px;
+}
+
+.horarios-voltar{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45px;
+    left: 8%;
+    background-color: #7159C1;
+    border-radius: 5px;
+}
+
+.horarios-opcoes{
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 2.5%;
+    border-radius: 5px;
+}
+
+.tabela-horarios{
+    font-family: 'Quicksand', sans-serif;
+    border-collapse: collapse;
+    margin: 20% 0 0 0;
+    font-size: 1rem;
+    min-width: 300px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10.5%;
+}
+
+.tabela-horarios thead tr{
+    background-color: #7159C1;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabela-horarios tbody tr{
+    background-color: #e6e6e6;
+    color: #7159C1;
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.tabela-horarios tbody tr:nth-of-type(odd){
+    background-color: #f0f0f0;
+}
+
+.tabela-horarios tbody tr.active-row{
+    font-weight: bold;
+    color: #7159C1;
+}
+
+.tabela-horarios th{
+    padding: 12px 15px;
+}
+
+.tabela-horarios td{
+    padding: 12px 15px;
 }
