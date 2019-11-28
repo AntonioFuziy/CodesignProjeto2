@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style-cliente.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <title>horários</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index.html'">
+        <div class="busca">
+            <input type="text" name="busca" id="busca" width="100px" height="20px">
+        </div>
+        <img src="assets/img/menu.png" alt="menu" width="40px" height="40px" class="menu" onclick="paginaInicial()">
+    </nav>
+
+    <div id="menu-hover">
+        <div class="container-menu">
+            <p id="button-pagina-inicial" onclick="location.href='index.html'">Página Inicial</p>
+            <br>
+            <p id="button-scan">Scan</p>
+            <br>
+            <p id="button-rotina">Rotina</p>
+            <br>
+            <p id="button-ajuda">Ajuda</p>
+        </div>
+    </div>
+
+    <div class="container-horarios">
+        
+        <div class="horarios-opcoes">
+            <div class="horarios-voltar" onclick="location.href='index.html'">
+                <img src="assets/img/arrow.png" alt="arrow-icon" width="25px" height="25px" style="margin-left: 10px">
+                <p style="color:#f7f7f7; font-size: 1.2rem; margin-right: 10px">Voltar</p>
+            </div>
+            <div class="conversas" onclick="location.href='chat.html'">
+                <img src="assets/img/chat.png" alt="ligar" width="25px" height="25px" style="margin-left: 10px">
+                <p style="color:#f7f7f7; font-size: 1.2rem; margin-right: 10px">Conversas</p>
+            </div>
+        </div>
+
+        <div>
+            <table class="tabela-horarios" onclick="location.href='estacionado.html'">
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Carro</th>
+                        <th>Placa</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active-row">
+                        <td>Saída</td>
+                        <td>Ford Focus</td>
+                        <td>INS-1234</td>
+                        <td>13:45</td>
+                    </tr>
+                    <tr>
+                        <td>Chegada</td>
+                        <td>Chevrolet Onix</td>
+                        <td>ABC-5765</td>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <td>Chegada</td>
+                        <td>Fiat Uno</td>
+                        <td>XYZ-5252</td>
+                        <td>14:15</td>
+                    </tr>
+                    <tr>
+                        <td>Saída</td>
+                        <td>Chevrolet Onix</td>
+                        <td>ABC-5765</td>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Chegada</td>
+                        <td>Ford Fiesta</td>
+                        <td>GIT-1893</td>
+                        <td>15:30</td>
+                    </tr>
+                    <tr>
+                        <td>Chegada</td>
+                        <td>Renault Kwid</td>
+                        <td>WOE-1248</td>
+                        <td>15:30</td>
+                    </tr>
+                    <tr>
+                        <td>Saída</td>
+                        <td>Ford Fox</td>
+                        <td>POW-6969</td>
+                        <td>15:45</td>
+                    </tr>
+                    <tr>
+                        <td>Chegada</td>
+                        <td>Chevrolet Cruze</td>
+                        <td>SDA-1390</td>
+                        <td>16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saída</td>
+                        <td>Renault Kwid</td>
+                        <td>WOE-1248</td>
+                        <td>17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saída</td>
+                        <td>Ford Fiesta</td>
+                        <td>GIT-1893</td>
+                        <td>17:30</td>
+                    </tr>
+                    <tr>
+                        <td>Saída</td>
+                        <td>Chevrolet Cruze</td>
+                        <td>SDA-1390</td>
+                        <td>17:30</td>
+                    </tr>
+                    <tr>
+                        <td>Saída</td>
+                        <td>Fiat Uno</td>
+                        <td>XYZ-5252</td>
+                        <td>18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="assets/js/cliente.js"></script>
+
+</body>
+</html>
