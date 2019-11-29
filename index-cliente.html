@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style-cliente.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
     <title>index-cliente</title>
 </head>
 <body>
     <nav class="nav-bar">
-        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index.html'">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index-cliente.html'">
         <div class="busca">
             <input type="text" name="busca" id="busca" width="100px" height="20px">
         </div>
@@ -19,13 +20,11 @@
 
     <div id="menu-hover">
         <div class="container-menu">
-            <p id="button-pagina-inicial" onclick="location.href='index.html'">Página Inicial</p>
-            <br>
-            <p id="button-scan">Scan</p>
+            <p id="button-pagina-inicial" onclick="location.href='index-cliente.html'">Página Inicial</p>
             <br>
             <p id="button-rotina">Rotina</p>
             <br>
-            <p id="button-ajuda">Ajuda</p>
+            <p id="button-ajuda" onclick="location.href='ajuda.html'">Ajuda</p>
         </div>
     </div>
 
@@ -33,7 +32,7 @@
         <img src="assets/img/map.png" alt="mapa" class="mapa" width="375px" height="550px">
         
         <div class="rotina">
-            <img src="assets/img/plus.png" alt="plus" id="plus-image" width="40px" height="40px" onclick="fadeRotina()">
+            <img src="assets/img/plus.png" alt="plus" id="plus-image" width="40px" height="40px" onclick="fadeRotina()" onclick="location.href='edicao-rotina.html'">
             <br>
             <h1 class="titulo">Rotina</h1>
             <div class="texto1">
