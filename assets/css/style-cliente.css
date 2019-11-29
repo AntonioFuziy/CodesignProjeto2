@@ -1243,6 +1243,49 @@ li{
     box-shadow: 5px 5px 5px 5px #e6e6e6;
 }
 
+/* Avaliação cliente -=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=- */
+
+#container-avaliacao-cliente{
+    display: flex;
+}
+
+.titulo-avaliacao-cliente{
+    z-index: 2;
+    font-size: 1.7rem;
+    color: white;
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+
+#comment{
+    width: 300px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    z-index: 10;
+    height: 10%;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+
+.texto-comment{
+    z-index: 999;
+    position: absolute;
+    top: 47%;
+    font-size: 1.5rem;
+    color: #7159C1;
+    text-align: center;
+    width: 100%;
+
+}
+
 /* Estacionado -=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=- */
 
 .container-descricao-estacionado{
