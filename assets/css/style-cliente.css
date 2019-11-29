@@ -189,6 +189,7 @@ body{
     top: 3%;
     width: 100%;
     text-align: center;
+    font-family: 'PT Serif Caption';
 }
 
 .estacionado-info-cliente-index{
@@ -229,6 +230,7 @@ body{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    font-family: 'PT Serif Caption';
 }
 
 .estacionado-info-cliente-index p{
@@ -411,16 +413,16 @@ body{
 
 /* Div da Rotina */
 
-.plus-image{
+#plus-image{
     border-radius: 50%;
     z-index: 10;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     box-shadow: 2px 2px 2px 2px #dbdbdbdb;
 }
 
-.plus-image:hover{
+#plus-image:hover{
     box-shadow: 4px 4px 4px 4px #dbdbdb;
 }
 
@@ -435,12 +437,9 @@ body{
     height: 270px;
     text-align: center;
     box-shadow: 2px 2px #dbdbdbdb;
-    border-style: solid;
+    border-style: none none solid none;
     border-width: 1px;
     border-color: #dbdbdb;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
@@ -448,58 +447,42 @@ body{
 
 .rotina h1{
     font-size: 1.5rem;
+    font-family: 'PT Serif Caption';
 }
 
 .titulo{
-    margin-top: 10px;
     text-align: center;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
 }
 
 .horario1{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 55%;
+}
+
+#chegada1{
     font-size: 1.2rem;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border-style: solid none solid none;
-    border-color: #dbdbdb;
-    border-width: 2px;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+#saida1{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    font-size: 1.2rem;
 }
 
 .texto1{
     font-size: 1.2rem;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    border-style: solid none solid none;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 30%;
+    border-style: solid;
     border-color: #dbdbdb;
-    border-width: 2px;
-}
-
-.horario2{
-    font-size: 1.2rem;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border-style: none none none none;
-    border-color: #dbdbdb;
-    border-width: 2px;
-}
-
-.texto2{
-    font-size: 1.2rem;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    border-style: none none none none;
-    border-color: black;
     border-width: 2px;
 }
 
@@ -623,6 +606,7 @@ body{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     color: #dbdbdb;
+    font-family: 'PT Serif Caption';
 }
 
 .titulo-texto{
@@ -705,6 +689,7 @@ li{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     color: #7159C1;
+    font-family: 'PT Serif Caption';
 }
 
 .cor-fundo-container{
@@ -729,6 +714,7 @@ li{
     font-size: 1.5rem;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
+    font-family: 'PT Serif Caption';
 }
 
 /* Inputs para edicao de rotina*/
@@ -745,7 +731,6 @@ li{
     border-width: 2px;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
     color: #000000;
 }
 
@@ -757,7 +742,6 @@ li{
     font-size: 1.5rem;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
     color: #7159C1;
 }
 
@@ -770,7 +754,6 @@ li{
     top: 49%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
     color: #7159C1;
     width: 100%;
     text-align: center;
@@ -788,7 +771,6 @@ li{
     border-width: 1px;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
 }
 
 #titulo-time-saida{
@@ -800,7 +782,6 @@ li{
     text-align: center;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
     color: #7159C1;
 }
 
@@ -816,7 +797,6 @@ li{
     border-width: 1px;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
 }
 
 
@@ -835,7 +815,6 @@ li{
     text-align: center;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
 }
 
 #titulo-dias-semana{
@@ -846,7 +825,6 @@ li{
     top: 33%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
     color: #000000;
 }
 
@@ -996,14 +974,13 @@ li{
     border-width: 1px;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
     z-index: 2;
     background-color: #7159C1;
     color: white;
     z-index: 998;
 }
 
-.button-cancelar-edicao-rotina{
+#button-cancelar-edicao-rotina{
     font-size: 1.2rem;
     z-index: 2;
     background-color: #7159C1;
@@ -1020,7 +997,6 @@ li{
     border-width: 1px;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
     z-index: 998;
 }
 
@@ -1030,7 +1006,7 @@ li{
     color: white;
 }
 
-.button-cancelar-edicao-rotina:hover{
+#button-cancelar-edicao-rotina:hover{
     z-index: 2;
     background-color: black;
     color: white;
@@ -1054,6 +1030,7 @@ li{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     background-color: #7159C1;
+    font-family: 'PT Serif Caption';
 }
 
 
@@ -1094,6 +1071,7 @@ li{
     background-color: white;
     text-align: center;
     color: #7159C1;
+    font-family: 'PT Serif Caption';
 }
 
 .gorjeta{
@@ -1240,10 +1218,9 @@ li{
     border-color: #dbdbdb;
     border-width: 1px;
     border-style: solid;
-    box-shadow: 5px 5px 5px 5px #e6e6e6;
 }
 
-/* Avaliação cliente -=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=- */
+/* Avaliação Cliente -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
 
 #container-avaliacao-cliente{
     display: flex;
@@ -1260,6 +1237,7 @@ li{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     text-align: center;
+    font-family: 'PT Serif Caption';
 }
 
 #comment{
@@ -1284,6 +1262,164 @@ li{
     text-align: center;
     width: 100%;
 
+}
+
+/* Estacionado -=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=- */
+
+.container-estacionado{
+    display: flex;
+}
+
+.container-descricao-estacionado{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    width: 60%;
+    height: 30%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    box-shadow: 3px 3px 3px 3px #dbdbdb;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.titulo-estacionado{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'PT Serif Caption';
+}
+
+.texto-estacionado{
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+/* Página de SCAN -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.scan-titulo{
+    margin-top: 7px;
+    font-size: 2rem;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    font-family: 'PT Serif Caption';
+}
+
+.scan-camera{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    border-style: solid;
+    border-color: #dbdbdb;
+    border-width: 3px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.texto-scan{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 9%;
+    left: 27%;
+    width: 170px;
+    height: 30px;
+    color: #dbdbdb;
+    text-align: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.seta-scan-cima{
+    position: absolute;
+    top: 11%;
+    left: 37%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.seta-scan-baixo{
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.ok-button-scan{
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    color: #7159C1;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.ok-button-scan p{
+    margin-top: 10px;
+}
+
+.ok-button-scan:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.cancelar-button-scan{
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    color: #7159C1;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+}
+
+.cancelar-button-scan p{
+    margin-top: 10px;
+}
+
+.cancelar-button-scan:hover{
+    background-color: #000000;
+    color: white;
+}
+
+
+@keyframes fadeNotification{
+    from{
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 /* Estacionado -=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=- */
@@ -1352,7 +1488,7 @@ li{
     animation-fill-mode: forwards;
 }
 
-.horario-saida{
+#horario-saida{
     font-size: 1.5rem;
     z-index: 4;
     display: flex;
@@ -1571,7 +1707,7 @@ li{
     z-index: 0;
 }
 
-.horarios-conversas{
+.conversas{
     z-index: 3;
     display: flex;
     justify-content: space-around;
@@ -1607,9 +1743,6 @@ li{
     height: 45px;
     top: 2.5%;
     border-radius: 5px;
-    animation-name: fadeNotification;
-    animation-duration: 1.0s;
-    animation-fill-mode: forwards;
 }
 
 .tabela-horarios{
@@ -1622,9 +1755,6 @@ li{
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin-bottom: 10.5%;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
 }
 
 .tabela-horarios thead tr{
@@ -1661,356 +1791,4 @@ li{
 
 input{
     z-index: 9999;
-}
-
-/* Chat -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
-
-.container-chat{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #dbdbdb;
-    z-index: 0;
-}
-
-.chat-position{
-    bottom: 0;
-    width: 100%;
-    height: 65px;
-    display: flex;
-    position: absolute;
-    background-color: #7159C1;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.chat-position img{
-    margin-right: 5%;
-    box-shadow: 0px 0px 7px 1px #43366d;
-    border-radius: 50px;
-    padding: 5px;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.chat-type input{
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    top: 27.5%;
-    height: 1.5rem;
-    width: 75%;
-    left: 5%;
-    border-radius: 5px;
-    border-width: 1px;
-    position: absolute;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.secao-voltar{
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    background-color: #7159C1;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    box-sizing: border-box;
-    padding: 0 10px;
-}
-
-.secao-voltar img{
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.secao-voltar p{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: #f3f3f3;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.criptografia{
-    background-color: #FCF3C0;
-    width: 80%;
-    height: 80px;
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    font-family: 'Quicksand', sans-serif;
-    box-shadow: 0px 0px 10px 3px #9b9b9b;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.chat-texto{
-    background-color: #FFFFFF;
-    padding: 10px 10px;
-    position: absolute;
-    top: 10%;
-    left: 3%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    font-family: 'Quicksand', sans-serif;
-    box-shadow: 0px 0px 10px 3px #9b9b9b;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-/* Conversas -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
-
-.container-conversas{
-    width: 100%;
-    height: 100%;
-    margin-top: 60px;
-    position: absolute;
-    background-color: #FFFFFF;
-    z-index: 0;
-}
-
-.conversas{
-    font-family: 'Quicksand', sans-serif;
-    border-collapse: collapse;
-    font-size: 1rem;
-    min-width: 300px;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-bottom: 10.5%;
-    table-layout: auto;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.conversas img{
-    border-radius: 50%;
-}
-
-.conversas thead tr{
-    background-color: #7159C1;
-    color: #FFFFFF;
-    text-align: left;
-    font-weight: bold;
-}
-
-.conversas tbody tr{
-    background-color: #e6e6e6;
-    color: #7159C1;
-    text-align: left;
-    font-weight: 500;
-    border-bottom: 1px solid #d1d1d1;
-}
-
-.conversas tbody tr:nth-of-type(odd){
-    background-color: #f0f0f0;
-}
-
-.conversas td{
-    padding: 15px 12px 0px 15px;
-}
-
-.conversas td.texto{
-    padding: 0px 15px 22px 15px;
-}
-
-.conversas-voltar{
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    background-color: #7159C1;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    box-sizing: border-box;
-    padding: 0 10px;
-}
-
-.conversas-voltar img{
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.conversas-voltar p{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: #f3f3f3;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-/* Avaliação Cliente -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
-
-#container-avaliacao-cliente{
-    display: flex;
-}
-
-.titulo-avaliacao-cliente{
-    z-index: 2;
-    font-size: 1.7rem;
-    color: white;
-    position: absolute;
-    top: 13%;
-    width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dbdbdb;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    text-align: center;
-}
-
-/* Página de SCAN -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
-
-.scan-titulo{
-    margin-top: 7px;
-    font-size: 2rem;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-}
-
-.scan-camera{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 25%;
-    top: 25%;
-    border-style: solid;
-    border-color: #dbdbdb;
-    border-width: 3px;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-}
-
-.texto-scan{
-    font-size: 1.5rem;
-    position: absolute;
-    top: 9%;
-    left: 27%;
-    width: 170px;
-    height: 30px;
-    color: #dbdbdb;
-    text-align: center;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-}
-
-.seta-scan-cima{
-    position: absolute;
-    top: 11%;
-    left: 37%;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-}
-
-.seta-scan-baixo{
-    position: absolute;
-    top: 15%;
-    left: 37%;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-}
-
-.ok-button-scan{
-    z-index: 2;
-    position: absolute;
-    top: 70%;
-    left: 58%;
-    font-size: 1.5rem;
-    background-color: #ffffff;
-    width: 80px;
-    height: 50px;
-    text-align: center;
-    color: #7159C1;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-}
-
-.ok-button-scan p{
-    margin-top: 10px;
-}
-
-.ok-button-scan:hover{
-    background-color: #000000;
-    color: white;
-}
-
-.cancelar-button-scan{
-    z-index: 2;
-    position: absolute;
-    top: 70%;
-    left: 18%;
-    font-size: 1.5rem;
-    background-color: #ffffff;
-    width: 120px;
-    height: 50px;
-    text-align: center;
-    color: #7159C1;
-    animation-name: fadeNotification;
-    animation-duration: 1.2s;
-}
-
-.cancelar-button-scan p{
-    margin-top: 10px;
-}
-
-.cancelar-button-scan:hover{
-    background-color: #000000;
-    color: white;
-}
-
-
-@keyframes fadeNotification{
-    from{
-        opacity: 0;
-        transform: translateY(-30%);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-        transform: translateY(-10%);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
 }
