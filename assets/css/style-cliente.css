@@ -1,5 +1,6 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     background-color: #dbdbdb;
 }
 
@@ -189,6 +190,7 @@ body{
     top: 3%;
     width: 100%;
     text-align: center;
+    font-family: 'PT Serif Caption';
 }
 
 .estacionado-info-cliente-index{
@@ -229,6 +231,7 @@ body{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    font-family: 'PT Serif Caption';
 }
 
 .estacionado-info-cliente-index p{
@@ -457,6 +460,7 @@ body{
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 4;
+    font-family: 'PT Serif Caption';
 }
 
 .horario1{
@@ -623,6 +627,7 @@ body{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     color: #dbdbdb;
+    font-family: 'PT Serif Caption';
 }
 
 .titulo-texto{
@@ -705,6 +710,7 @@ li{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     color: #7159C1;
+    font-family: 'PT Serif Caption';
 }
 
 .cor-fundo-container{
@@ -729,6 +735,7 @@ li{
     font-size: 1.5rem;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
+    font-family: 'PT Serif Caption';
 }
 
 /* Inputs para edicao de rotina*/
@@ -1054,6 +1061,7 @@ li{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     background-color: #7159C1;
+    font-family: 'PT Serif Caption';
 }
 
 
@@ -1094,6 +1102,7 @@ li{
     background-color: white;
     text-align: center;
     color: #7159C1;
+    font-family: 'PT Serif Caption';
 }
 
 .gorjeta{
@@ -1260,6 +1269,7 @@ li{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     text-align: center;
+    font-family: 'PT Serif Caption';
 }
 
 #comment{
@@ -1321,6 +1331,7 @@ li{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    font-family: 'PT Serif Caption';
 }
 
 .texto-estacionado{
@@ -1471,6 +1482,7 @@ li{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    font-family: 'PT Serif Caption';
 }
 
 .estacionado-info-cliente p{
@@ -1888,6 +1900,7 @@ input{
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     text-align: center;
+    font-family: 'PT Serif Caption';
 }
 
 /* Página de SCAN -=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -1897,6 +1910,7 @@ input{
     font-size: 2rem;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
+    font-family: 'PT Serif Caption';
 }
 
 .scan-camera{
