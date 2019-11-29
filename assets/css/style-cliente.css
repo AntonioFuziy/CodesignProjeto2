@@ -411,16 +411,16 @@ body{
 
 /* Div da Rotina */
 
-.plus-image{
+#plus-image{
     border-radius: 50%;
     z-index: 10;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     box-shadow: 2px 2px 2px 2px #dbdbdbdb;
 }
 
-.plus-image:hover{
+#plus-image:hover{
     box-shadow: 4px 4px 4px 4px #dbdbdb;
 }
 
@@ -435,12 +435,9 @@ body{
     height: 270px;
     text-align: center;
     box-shadow: 2px 2px #dbdbdbdb;
-    border-style: solid;
+    border-style: none none solid none;
     border-width: 1px;
     border-color: #dbdbdb;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
@@ -451,55 +448,38 @@ body{
 }
 
 .titulo{
-    margin-top: 10px;
     text-align: center;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
 }
 
 .horario1{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 55%;
+}
+
+#chegada1{
     font-size: 1.2rem;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border-style: solid none solid none;
-    border-color: #dbdbdb;
-    border-width: 2px;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+#saida1{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    font-size: 1.2rem;
 }
 
 .texto1{
     font-size: 1.2rem;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    border-style: solid none solid none;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 30%;
+    border-style: solid;
     border-color: #dbdbdb;
-    border-width: 2px;
-}
-
-.horario2{
-    font-size: 1.2rem;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border-style: none none none none;
-    border-color: #dbdbdb;
-    border-width: 2px;
-}
-
-.texto2{
-    font-size: 1.2rem;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    border-style: none none none none;
-    border-color: black;
     border-width: 2px;
 }
 
@@ -690,12 +670,13 @@ li{
 
 /* Pagina de Edicao de Rotinas */
 
-.container-edicao-rotina{
-    display: flex;
+#container-edicao-rotina{
+    display: none;
+    color: #7159C1;
 }
 
 .titulo-edicao-rotina{
-    z-index: 2;
+    z-index: 999;
     top: 13%;
     width: 100%;
     text-align: center;
@@ -703,30 +684,37 @@ li{
     position: absolute;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    color: #dbdbdb;
+    color: #7159C1;
 }
 
 .cor-fundo-container{
-    z-index: 1;
+    z-index: 997;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 7.5%;
     background-color: white;
     width: 85%;
-    height: 70%;
+    height: 78%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 .titulo-dias-semana{
+    z-index: 998;
     position: absolute;
-    color: #000000;
-    margin-left: 6%;
+    color: #7159C1;
+    width: 100%;
+    top: 35%;
+    text-align: center;
+    font-size: 1.5rem;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 /* Inputs para edicao de rotina*/
 
 #input-titulo{
-    z-index: 2;
+    z-index: 998;
     width: 60%;
     justify-content: center;
     position: absolute;
@@ -742,36 +730,37 @@ li{
 }
 
 .edicao-titulo{
-    z-index: 2;
+    z-index: 998;
     position: absolute;
     top: 23%;
-    left: 15%;
+    left: 42%;
     font-size: 1.5rem;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
-    color: #000000;
+    color: #7159C1;
 }
 
 /* Botoes de ok e cancelar */
 
-.titulo-time-chegada{
-    z-index: 2;
+#titulo-time-chegada{
+    z-index: 998;
     position: absolute;
     font-size: 1.5rem;
-    top: 46%;
-    left: 12%;
+    top: 49%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
-    color: #000000;
+    color: #7159C1;
+    width: 100%;
+    text-align: center;
 }
 
 #time-chegada{
-    z-index: 2;
+    z-index: 998;
     width: 30%;
     position: absolute;
-    top: 51%;
+    top: 54%;
     left: 35%;
     font-size: 2.5rem;
     border-style: solid;
@@ -782,21 +771,22 @@ li{
     animation-fill-mode: forwards;
 }
 
-.titulo-time-saida{
-    z-index: 2;
+#titulo-time-saida{
+    z-index: 998;
     position: absolute;
     font-size: 1.5rem;
     top: 63%;
-    left: 12%;
+    width: 100%;
+    text-align: center;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
-    color: #000000;
+    color: #7159C1;
 }
 
 #time-saida{
-    z-index: 2;
-    top: 69%;
+    z-index: 998;
+    top: 67%;
     left: 35%;
     width: 30%;
     position: absolute;
@@ -809,25 +799,16 @@ li{
     animation-fill-mode: forwards;
 }
 
-.cor-fundo-edicao{
-    z-index: 1;
-    width: 100%;
-    height: 95%;
-    background-color: #7159C1;
-    position: absolute;
-    top: 7%;
-    left: 0;
-}
 
 /* Divisao dos dias da semana um ao lado do outro */
 
-.dias-semana{
-    z-index: 2;
+#dias-semana{
+    z-index: 998;
     display: flex;
     justify-content: space-between;
     width: 80%;
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 10%;
     font-family: 'helvetica', sans-serif;
     font-size: 2rem;
@@ -837,12 +818,12 @@ li{
     animation-fill-mode: forwards;
 }
 
-.titulo-dias-semana{
-    z-index: 2;
+#titulo-dias-semana{
+    z-index: 998;
     font-size: 1.5rem;
     position: absolute;
+    width: 100%;
     top: 33%;
-    left: 3%;
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
@@ -851,7 +832,7 @@ li{
 
 /*Formato dos botoes dos dias da semana*/
 
-.sunday{
+#sunday{
     z-index: 9999;
     border-style: solid;
     border-color: #dbdbdb;
@@ -859,10 +840,12 @@ li{
     width: 30px;
     text-align: center;
     background-color: #ffffff;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 
-.monday{
+#monday{
     z-index: 9999;
     width: 30px;
     border-style: solid;
@@ -870,10 +853,12 @@ li{
     border-width: 1px;
     text-align: center;
     background-color: #ffffff;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 
-.tuesday{
+#tuesday{
     z-index: 9999;
     width: 30px;
     border-style: solid;
@@ -881,10 +866,12 @@ li{
     border-width: 1px;
     text-align: center;
     background-color: #ffffff;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 
-.wednesday{
+#wednesday{
     width: 30px;
     z-index: 9999;
     border-style: solid;
@@ -892,10 +879,12 @@ li{
     border-width: 1px;
     text-align: center;
     background-color: #ffffff;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 
-.thursday{
+#thursday{
     z-index: 9999;
     border-style: solid;
     width: 30px;
@@ -903,10 +892,12 @@ li{
     border-width: 1px;
     text-align: center;
     background-color: #ffffff;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 
-.friday{
+#friday{
     z-index: 9999;
     border-style: solid;
     border-color: #dbdbdb;
@@ -914,52 +905,56 @@ li{
     text-align: center;
     border-width: 1px;
     background-color: #ffffff;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
 }
 
 
-.saturday{
+#saturday{
     z-index: 9999;
     border-style: solid;
     width: 30px;
     border-color: #dbdbdb;
     background-color: #ffffff;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
     border-width: 1px;
     text-align: center;
 }
 
 /* Configuracoes de botoes dos dias da semana */
 
-.sunday:hover{
+#sunday:hover{
     background-color: black;
     color: white;
 }
 
-.monday:hover{
+#monday:hover{
     background-color: black;
     color: white;
 }
 
-.tuesday:hover{
+#tuesday:hover{
     background-color: black;
     color: white;
 }
 
-.wednesday:hover{
+#wednesday:hover{
     background-color: black;
     color: white;
 }
 
-.thursday:hover{
+#thursday:hover{
     background-color: black;
     color: white;
 }
 
-.friday:hover{
+#friday:hover{
     background-color: black;
     color: white;
 }
 
-.saturday:hover{
+#saturday:hover{
     background-color: black;
     color: white;
 }
@@ -967,11 +962,11 @@ li{
 /* configuracoes de botoes de ok e cancelar */
 
 
-.button-ok-edicao-rotina{
+#button-ok-edicao-rotina{
     font-size: 1.2rem;
     position: absolute;
-    width: 20%;
-    height: 30px;
+    width: 25%;
+    height: 50px;
     left: 52%;
     top: 78%;
     padding: 10px;
@@ -985,6 +980,7 @@ li{
     z-index: 2;
     background-color: #7159C1;
     color: white;
+    z-index: 998;
 }
 
 .button-cancelar-edicao-rotina{
@@ -1005,9 +1001,10 @@ li{
     animation-name: fadeNotification;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    z-index: 998;
 }
 
-.button-ok-edicao-rotina:hover{
+#button-ok-edicao-rotina:hover{
     z-index: 2;
     background-color: black;
     color: white;
@@ -1223,211 +1220,7 @@ li{
     border-color: #dbdbdb;
     border-width: 1px;
     border-style: solid;
-}
-
-/* Chat -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
-
-.container-chat{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #dbdbdb;
-    z-index: 0;
-}
-
-.chat-position{
-    bottom: 0;
-    width: 100%;
-    height: 65px;
-    display: flex;
-    position: absolute;
-    background-color: #7159C1;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.chat-position img{
-    margin-right: 5%;
-    box-shadow: 0px 0px 7px 1px #43366d;
-    border-radius: 50px;
-    padding: 5px;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.chat-type input{
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    top: 27.5%;
-    height: 1.5rem;
-    width: 75%;
-    left: 5%;
-    border-radius: 5px;
-    border-width: 1px;
-    position: absolute;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.secao-voltar{
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    background-color: #7159C1;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    box-sizing: border-box;
-    padding: 0 10px;
-}
-
-.secao-voltar img{
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.secao-voltar p{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: #f3f3f3;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.criptografia{
-    background-color: #FCF3C0;
-    width: 80%;
-    height: 80px;
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    font-family: 'Quicksand', sans-serif;
-    box-shadow: 0px 0px 10px 3px #9b9b9b;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.chat-texto{
-    background-color: #FFFFFF;
-    padding: 10px 10px;
-    position: absolute;
-    top: 10%;
-    left: 3%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    font-family: 'Quicksand', sans-serif;
-    box-shadow: 0px 0px 10px 3px #9b9b9b;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-/* Conversas -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
-
-.container-conversas{
-    width: 100%;
-    height: 100%;
-    margin-top: 80px;
-    position: absolute;
-    background-color: #FFFFFF;
-    z-index: 0;
-}
-
-.conversas{
-    font-family: 'Quicksand', sans-serif;
-    border-collapse: collapse;
-    font-size: 1rem;
-    min-width: 300px;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-bottom: 10.5%;
-    table-layout: auto;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.conversas img{
-    border-radius: 50%;
-}
-
-.conversas thead tr{
-    background-color: #7159C1;
-    color: #FFFFFF;
-    text-align: left;
-    font-weight: bold;
-}
-
-.conversas tbody tr{
-    background-color: #e6e6e6;
-    color: #7159C1;
-    text-align: left;
-    font-weight: 500;
-    border-bottom: 1px solid #d1d1d1;
-}
-
-.conversas tbody tr:nth-of-type(odd){
-    background-color: #f0f0f0;
-}
-
-.conversas td{
-    padding: 15px 12px 0px 15px;
-}
-
-.conversas td.texto{
-    padding: 0px 15px 22px 15px;
-}
-
-.conversas-voltar{
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    background-color: #7159C1;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    box-sizing: border-box;
-    padding: 0 10px;
-}
-
-.conversas-voltar img{
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
-
-.conversas-voltar p{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: #f3f3f3;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+    box-shadow: 5px 5px 5px 5px #e6e6e6;
 }
 
 /* Avaliação Cliente -=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=--=-=-==-=-=-=-=-=-=-=-=-=-=- */
@@ -1583,6 +1376,31 @@ li{
     color: white;
 }
 
+
+@keyframes fadeNotification{
+    from{
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 /* Estacionado -=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=- */
 
 .container-descricao-estacionado{
@@ -1649,7 +1467,7 @@ li{
     animation-fill-mode: forwards;
 }
 
-.horario-saida{
+#horario-saida{
     font-size: 1.5rem;
     z-index: 4;
     display: flex;
@@ -1868,7 +1686,7 @@ li{
     z-index: 0;
 }
 
-.horarios-conversas{
+.conversas{
     z-index: 3;
     display: flex;
     justify-content: space-around;
@@ -1904,9 +1722,6 @@ li{
     height: 45px;
     top: 2.5%;
     border-radius: 5px;
-    animation-name: fadeNotification;
-    animation-duration: 1.0s;
-    animation-fill-mode: forwards;
 }
 
 .tabela-horarios{
@@ -1919,9 +1734,6 @@ li{
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin-bottom: 10.5%;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
 }
 
 .tabela-horarios thead tr{
@@ -1956,26 +1768,6 @@ li{
     padding: 12px 15px;
 }
 
-@keyframes fadeNotification{
-    from{
-        opacity: 0;
-        transform: translateY(-30%);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-        transform: translateY(-10%);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
+input{
+    z-index: 9999;
 }
