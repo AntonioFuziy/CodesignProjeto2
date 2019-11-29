@@ -30,50 +30,17 @@
     </div>
 
     <div class="container">
-        <img src="assets/img/map.png" alt="mapa" class="mapa" width="375px" height="550px">
         
-        <div class="rotina">
-            <img src="assets/img/plus.png" alt="plus" class="plus-image" width="40px" height="40px" onclick="location.href='edicao-rotina.html'">
-            <br>
-            <h1 class="titulo">Rotina</h1>
-            <p class='horario1'>
-                <br>
-                Chegada: 13:20
-                <br>
-                <br>
-                Saída: 18:30
-            </p>
-            <p class="texto1">
-                <br>
-                Onix:
-                <br>
-                Placa: OLX-1923
-                <br>
-            </p>
-            <br>
-            <p class='horario2'>
-                <br>
-                Chegada: 13:20
-            </p>
-            <p class="texto2">
-                <br>
-                HB-20:
-                <br>
-                Placa: QLA-2310
-                <br>
-            </p>
+        <div class="how-to-button-index" onclick="location.href='ajuda.html'">
+            <img src="assets/img/interrogacao.png" alt="how-to-button" class="imagem-interrogacao-index" width="25px" height="35px">
         </div>
 
-        <div class="how-to-button" onclick="location.href='ajuda.html'">
-            <img src="assets/img/interrogacao.png" alt="how-to-button" class="imagem-interrogacao" width="30px" height="50px">
+        <div class="chat-button" onclick="location.href='chat.html'">
+            <img src="assets/img/comment.png" alt="scan" width="35px" height="35px" class="chat">
         </div>
 
-        <div class="chamar-button" onclick="location.href='avaliacao-manobrista'">
-            <h2>Chamar</h2>
-        </div>
-
-        <div class="scan-button" onclick="location.href='scan.html'">
-            <img src="assets/img/scan.png" alt="scan" width="50px" height="50px" class="scan">
+        <div class="eventos">
+            <p class="titulo-eventos">Próximos Eventos</p>
         </div>
 
         <div class="cor-fundo">
@@ -83,6 +50,58 @@
         <div class="cor-fundo2">
 
         </div>
+
+        <div class="estacionado-info-cliente-index">
+            <p class="titulo-cliente-estacionado-index">Informações do cliente</p>
+            <div class="estacionado-foto-cliente-index">
+                <img src="assets/img/fotoCliente.png" alt="fotoCliente" width="85px" height="85px" style="border-radius: 50%; border-width: 3px;">
+            </div>
+            <div class="descricao-estacionado-nome-index">
+                <p>Malcom Menerocco</p>
+            </div>
+            <div class="descricao-estacionado-avaliacao-index">
+                <img src="assets/img/fill-star.png" alt="estrela" width="20px" height="20px" style="border-radius: 50%; border-width: 3px;" class="gold-star-index">
+                <p>4.92</p>
+            </div>
+        </div>
+
+        <table class="tabela-horarios-index" onclick="location.href='horarios.html'">
+            <thead>
+                <tr>
+                    <th>Evento</th>
+                    <th>Carro</th>
+                    <th>Placa</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active-row-index">
+                    <td>Saída</td>
+                    <td>Ford Focus</td>
+                    <td>INS-1234</td>
+                    <td>13:45</td>
+                </tr>
+                <tr>
+                    <td>Chegada</td>
+                    <td>Chevrolet Onix</td>
+                    <td>ABC-5765</td>
+                    <td>14:00</td>
+                </tr>
+                <tr>
+                    <td>Chegada</td>
+                    <td>Fiat Uno</td>
+                    <td>XYZ-5252</td>
+                    <td>14:15</td>
+                </tr>
+                <tr>
+                    <td>Saída</td>
+                    <td>Chevrolet Onix</td>
+                    <td>ABC-5765</td>
+                    <td>15:00</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
 
     <script src="assets/js/cliente.js"></script>
