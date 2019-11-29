@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style-cliente.css">
+    <title>index-cliente</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="assets/img/logoWePark.jpeg" alt="logo" width="60px" height="40px" class="logo" onclick="location.href='index.html'">
+        <div class="busca">
+            <input type="text" name="busca" id="busca" width="100px" height="20px">
+        </div>
+        <img src="assets/img/menu.png" alt="menu" width="40px" height="40px" class="menu" onclick="paginaInicial()">
+    </nav>
+
+    <div id="menu-hover">
+        <div class="container-menu">
+            <p id="button-pagina-inicial" onclick="location.href='index.html'">Página Inicial</p>
+            <br>
+            <p id="button-scan">Scan</p>
+            <br>
+            <p id="button-rotina">Rotina</p>
+            <br>
+            <p id="button-ajuda">Ajuda</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="assets/img/map.png" alt="mapa" class="mapa" width="375px" height="550px">
+        
+        <div class="rotina">
+            <img src="assets/img/plus.png" alt="plus" id="plus-image" width="40px" height="40px" onclick="fadeRotina()">
+            <br>
+            <h1 class="titulo">Rotina</h1>
+            <div class="texto1">
+                <br>
+                <p id="titulo1">Segunda-Feira:
+                    <br>
+                    <br>
+                    Localização: Insper</p>
+                <br>
+            </div>
+            <div class='horario1'>
+                <br>
+                <p id="chegada1">Chegada: 13:20</p>
+                <br>
+                <br>
+                <p id="saida1">Saída: 18:30</p>
+            </div>
+            <br>
+        </div>
+
+        <div class="how-to-button" onclick="location.href='ajuda.html'">
+            <img src="assets/img/interrogacao.png" alt="how-to-button" class="imagem-interrogacao" width="30px" height="50px">
+        </div>
+
+        <div class="chamar-button" onclick="location.href='avaliacao-manobrista.html'">
+            <h2>Chamar</h2>
+        </div>
+
+        <div class="scan-button" onclick="location.href='scan.html'">
+            <img src="assets/img/scan.png" alt="scan" width="50px" height="50px" class="scan">
+        </div>
+
+        <div class="cor-fundo">
+            
+        </div>
+        
+        <div class="cor-fundo2">
+
+        </div>
+
+        <div id="container-edicao-rotina">
+                <div class="titulo-edicao-rotina">
+                    <p>Adicionar Rotina</p>
+                </div>
+        
+                <p class="edicao-titulo">Título:</p>
+        
+                <input type="text" name="titulo" id="input-titulo">
+        
+                <p class="titulo-dias-semana">Dias da semana:</p>
+        
+                <div id="dias-semana"> 
+                    <div id="sunday" onclick="Sunday()">S</div>
+                    <div id="monday" onclick="Monday()">M</div>
+                    <div id="tuesday" onclick="Tuesday()">T</div>
+                    <div id="wednesday" onclick="Wednesday()">W</div>
+                    <div id="thursday" onclick="Thursday()">T</div>
+                    <div id="friday" onclick="Friday()">F</div>
+                    <div id="saturday" onclick="Saturday()">S</div>
+                </div>
+                
+                <p id="titulo-time-chegada">Chegada:</p>
+        
+                <input type="time" name="time-chegada" id="time-chegada">
+        
+                <p id="titulo-time-saida">Saída:</p>
+        
+                <input type="time" name="time-saida" id="time-saida">
+        
+                <div id="button-cancelar-edicao-rotina" onclick="fadeNotRotina()">
+                    Cancelar
+                </div>
+
+                <input type="submit" value="Ok" onclick="enviar()" id="button-ok-edicao-rotina">
+        
+                <div class="cor-fundo-container">
+        
+                </div>
+
+        </div>
+    </div>
+    <script src="assets/js/cliente.js"></script>
+
+</body>
+</html>
