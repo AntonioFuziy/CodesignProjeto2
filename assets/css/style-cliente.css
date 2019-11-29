@@ -381,6 +381,23 @@ body{
     border-bottom: 1px solid #d1d1d1;
 }
 
+.avaliar-button{
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 99;
+    margin-left: 26%;
+    font-size: 1.5rem;
+    position: absolute;
+    width: 150px;
+    bottom: 20px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
 .tabela-horarios-index tbody tr:nth-of-type(odd){
     background-color: #f0f0f0;
 }
@@ -398,6 +415,9 @@ body{
     padding: 7px 10px;
 }
 
+.tabela-horarios-index:last-    {
+    width: 100%;
+}
 /* index cliente -=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=-*/
 
 /* Mapa */
