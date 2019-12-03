@@ -546,6 +546,19 @@ body{
     animation-fill-mode: forwards;
 }
 
+.foto-cliente-index{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    left: -22.5%;
+    top: 60%;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
 /* index cliente -=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=-*/
 
 /* Mapa */
@@ -748,22 +761,6 @@ body{
     background-color: #7159C1;
     top: 0;
     left: 0;
-}
-
-.sanfona{
-    z-index: 99;
-    position: absolute;
-    background-color: #dbdbdb;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    bottom: 10%;
-    left: 8%;
-    width: 85%;
-    height: 10%;
-    box-shadow: 0px 0px 5px 5px #c4c4c4;
-    color: #7159C1;
-    padding: 2px;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
