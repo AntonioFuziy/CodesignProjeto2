@@ -530,6 +530,21 @@ body{
     animation-fill-mode: forwards;
 }
 
+.descricao-manobrista-index{
+    font-size: 1.3rem;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    left: 40%;
+    top: 100%;
+    text-align: center;
+    animation-name: fadeNotification;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
 
 /* index cliente -=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=--=--=--=-=-=-=-*/
 
